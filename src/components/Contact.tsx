@@ -1,3 +1,4 @@
+import { useForm, ValidationError } from "@formspree/react";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephone } from "react-icons/bs";
@@ -23,36 +24,44 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="space-y-8">
-          <div className="flex flex-col gap-1" data-aos="zoom-in-up">
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              className="h-[40px] bg-transparent border border-accent"
-              id="name"
-            />
-          </div>
-          <div className="flex flex-col gap-1" data-aos="zoom-in-up">
-            <label htmlFor="email">Email</label>
-            <input
-              type="text"
-              className="h-[40px] bg-transparent border border-accent"
-              id="email"
-            />
-          </div>
-          <div className="flex flex-col gap-1" data-aos="zoom-in-up">
-            <label htmlFor="msg">Message</label>
-            <textarea
-              className="bg-transparent border border-accent"
-              id="msg"
-              rows={8}
-            ></textarea>
-          </div>
+        <form action="https://formspree.io/f/xbjvdzbg" method="POST">
+          <div className="space-y-8">
+            <div className="flex flex-col gap-1" data-aos="zoom-in-up">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                className="h-[40px] bg-transparent border border-accent"
+                id="name"
+              />
+            </div>
+            <div className="flex flex-col gap-1" data-aos="zoom-in-up">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                className="h-[40px] bg-transparent border border-accent"
+                id="email"
+                name="email"
+              />
+            </div>
+            <div className="flex flex-col gap-1" data-aos="zoom-in-up">
+              <label htmlFor="msg">Message</label>
+              <textarea
+                className="bg-transparent border border-accent"
+                id="msg"
+                rows={8}
+                name="message"
+              ></textarea>
+            </div>
 
-          <button className="bg-accent p-2 px-6" data-aos="zoom-in-up">
-            Send
-          </button>
-        </div>
+            <button
+              className="bg-accent p-2 px-6"
+              data-aos="zoom-in-up"
+              type="submit"
+            >
+              Send
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );
