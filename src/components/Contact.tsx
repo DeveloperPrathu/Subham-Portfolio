@@ -4,7 +4,7 @@ import { BsTelephone } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <div className="pt-32 container">
+    <div className="pt-32 container" id="Contact">
       <div className="grid md:grid-cols-2 gap-10">
         <div className="space-y-8">
           <h2 className="text-5xl" data-aos="zoom-in-up">

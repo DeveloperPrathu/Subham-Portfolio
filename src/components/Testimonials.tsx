@@ -28,7 +28,7 @@ const testimonialData = [
 
 const Testimonials = () => {
   return (
-    <div className="container pt-32">
+    <div className="container pt-32" id="Testimonial">
       <Heading title="Testimonials" />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {testimonialData.map((item, index) => (

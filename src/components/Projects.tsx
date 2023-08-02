@@ -49,7 +49,7 @@ const data = [
 
 const Projects = () => {
   return (
-    <div className="container pt-32">
+    <div className="container pt-32" id="Project">
       <Heading title="My Projects" />
       <div className="grid gap-10 xl:gap-0 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center">
         {data.map((el) => (
