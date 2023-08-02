@@ -17,10 +17,10 @@ const Contact = () => {
           </p>
 
           <div className="flex gap-3 items-center" data-aos="zoom-in-up">
-            <AiOutlineMail size={30} /> hello@bravecoders.com
+            <AiOutlineMail size={30} /> subham@gmail.com
           </div>
           <div className="flex gap-3 items-center" data-aos="zoom-in-up">
-            <BsTelephone size={30} /> +1 (222) 000-0000
+            <BsTelephone size={30} /> +91 9540142600
           </div>
         </div>
 
